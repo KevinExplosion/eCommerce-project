@@ -1,7 +1,12 @@
 { "products": [{
-  "title": "Bauer NME 7 Goalie Helmet",
+  "title": "Bauer NME 7 Goalie Helmet - Black",
   "description": "Great, cat-eye goalie mask. Black. From Bauer",
   "image": "http://www.hockeyrelated.com/wp-content/uploads/2011/12/Bauer-NME-7-Goalie-Mask.jpg",
-  "cost": "$400"
-  }]
+  "cost": 400
+  },{
+    "title": "Bauer NME 8 Goalie Helmet - White",
+    "description": "Great, cat-eye goalie mask. White. From Bauer",
+    "image": "https://images.totalhockey.com/img.aspx?pic_id=65622&pic_type=5",
+    "cost": 399
+    }]
 }
