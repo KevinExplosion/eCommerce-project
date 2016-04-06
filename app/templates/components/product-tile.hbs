@@ -1,5 +1,5 @@
-<h4>{{product.title}}</h4>
-<h5>{{product.cost}}</h5>
+{{#link-to 'store-item' product.id}}<h4>{{product.title}}</h4>{{/link-to}}
+<h5>${{product.cost}}</h5>
   <div class="row">
     <div class="col-md-10">
       <div class="col-md-4">
@@ -13,5 +13,6 @@
     </div>
   </div>
 
+  <hr>
 <button {{action "addToCart" product}}>Add to Cart</button>
-<hr>
+<button {{action 'delete' product}}>Delete</button>

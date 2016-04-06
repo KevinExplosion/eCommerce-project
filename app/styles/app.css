@@ -1,9 +1,19 @@
+.navbar {
+  background-color: #6c7a89;
+  border-radius: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
 img {
   width: 300px;
   height: auto;
 }
 
 .product {
-  background-color: grey
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: grey;
   border: 2px solid black;
 }
