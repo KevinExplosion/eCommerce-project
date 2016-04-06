@@ -1,0 +1,9 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.product {
+  background-color: grey
+  border: 2px solid black;
+}
