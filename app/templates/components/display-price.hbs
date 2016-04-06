@@ -2,5 +2,7 @@
 <ul>
   <!-- {{#each shoppingCart.items as |item|}}
   {{/each}} -->
-  ${{shoppingCart.totalPrice}}
+  <h4>$ {{input
+            disabled="entryNotAllowed"
+            value=shoppingCart.totalPrice}}</h4>
 </ul>
