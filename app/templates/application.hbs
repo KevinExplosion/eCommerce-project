@@ -1,10 +1,10 @@
   <h2 id="title">E-Commerce</h2>
     <nav class="navbar">
-      {{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span>{{/link-to}} |
-      {{#link-to 'store'}}Store{{/link-to}} |
-      {{#link-to 'shopping-cart'}}<span class="glyphicon glyphicon-shopping-cart"></span>{{/link-to}} |
-      {{#link-to 'signin'}}Sign-In{{/link-to}} |
-      {{#link-to 'sign-up'}}Sign-Up{{/link-to}} |
+      <button>{{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span>{{/link-to}}</button>
+      <button>{{#link-to 'store'}}Store{{/link-to}}</button>
+      <button>{{#link-to 'shopping-cart'}}<span class="glyphicon glyphicon-shopping-cart"></span>{{/link-to}}</button>
+      <button>{{#link-to 'signin'}}Sign-In{{/link-to}}</button>
+      <button>{{#link-to 'sign-up'}}Sign-Up{{/link-to}}</button>
       {{#if session.isAuthenticated}}
         <button class='btn btn-default navbar-btn signOut' {{action 'signOut'}}>    {{fa-icon 'sign-out'}} Sign Out
         </button>
