@@ -1,7 +1,7 @@
 <!-- // app/templates/sign-up.hbs -->
 
 <div class="row">
-  <div class="col-xs-4">
+  <div class="col-xs-4 content">
     <h2>Sign Up</h2>
     <hr>
         {{input
@@ -23,5 +23,6 @@
       <button class='btn btn-default' {{action 'signUp'}}>
         {{fa-icon 'user-plus'}} Sign Up
       </button>
+      <h6>Already have a profile? Click {{#link-to 'signin'}}here{{/link-to}} to sign in!</h6>
     </div>
   </div>

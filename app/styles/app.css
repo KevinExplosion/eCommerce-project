@@ -1,7 +1,13 @@
+html {background-color: #000;}
+
 body {
   background-image: url("cssImages/pageBackground.jpg");
+  background-color: #000;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  color: #fff;
+  background-size: cover;
+  padding-bottom: 100px;
+  height: 1000px;
 }
 
 .navbar {
@@ -14,6 +20,12 @@ body {
 img {
   width: 300px;
   height: auto;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(51, 110, 123, 0.7);
+  border-radius: 5px;
 }
 
 .product {

@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   firebase: Ember.inject.service(),
   actions: {
     signUp() {
-      let controller = this;
+      this.transitionTo('store');
       this.get('firebase').createUser({
         email: this.get('email') || '',
         password: this.get('password') || '',

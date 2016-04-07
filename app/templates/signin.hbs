@@ -1,2 +1,39 @@
-<h2>Welcome!</h2>
-<h3>Please Sign-In</h3>
+<!-- /app/templates/sign-in.hbs -->
+
+<div class="row">
+  <div class="col-xs-4 content">
+    <h2>Welcome!</h2>
+    <h3>Please Sign-In</h3>
+
+      {{input
+          type='text'
+          class='form-control'
+          value=email
+          placeholder='email'
+          required="required"
+      }}
+      {{input
+          type='password'
+          class='form-control'
+          value=password
+          placeholder='password'
+          required="required"
+      }}
+      
+      {{#if session.isWorking}}
+
+        <button class='btn btn-default' disabled='disabled'>
+            {{fa-icon 'spinner' spin=true}} Signing in...
+        </button>
+
+      {{else}}
+
+        <button class='btn btn-default' {{action 'signIn' 'password'}}>
+            {{fa-icon 'sign-in'}} Sign In
+        </button>
+
+      {{/if}}
+
+      <h6>Don't have a profile? Click {{#link-to 'sign-up'}}here{{/link-to}} to create a profile!</h6>
+    </div>
+  </div>
