@@ -1,2 +1,10 @@
-<h2>More information about {{model.title}}'s {{model.cost}}</h2>
-{{product-detail product=model}}
+<div class="content">
+  <h6>
+    {{#link-to 'store'}}
+      <i class="fa fa-arrow-left"></i>Go back
+    {{/link-to}}
+  </h6>
+
+  <h3>More information about {{model.title}}</h3>
+    {{product-detail product=model}}
+</div>

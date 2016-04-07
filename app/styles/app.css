@@ -31,7 +31,7 @@ html {
 }
 
 a:visited {
-  color: #000;
+  color: rgba(200, 200, 200, 0);
 }
 
 a:hover {
@@ -48,6 +48,7 @@ img {
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(51, 110, 123, 0.7);
   border-radius: 5px;
+  padding: 10px;
 }
 
 .signOut {
