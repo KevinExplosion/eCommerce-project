@@ -1,9 +1,12 @@
-<div class="container">
+<div class="row">
   {{#each model as |product|}}
-    <div class="product">
-      {{product-tile product=product destroyProduct="destroyProduct"}}
+    <div class="col-md-4">
+      <div class="product">
+        {{product-tile product=product destroyProduct="destroyProduct"}}
+      </div>
     </div>
   {{/each}}
 </div>
+
 
 {{new-product-form saveProduct="saveProduct"}}

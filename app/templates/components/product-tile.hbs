@@ -1,14 +1,14 @@
 {{#link-to 'store-item' product.id}}<h4>{{product.title}}</h4>{{/link-to}}
-<h5>${{product.cost}}</h5>
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-10 storeProduct">
       <div class="col-md-4">
         <p><img src="{{product.image}}" alt="{{product.title}}"></p>
+        <h5>${{product.cost}}</h5>
       </div>
-
+<!--
       <div class="col-md-8">
         {{product.description}}
-      </div>
+      </div> -->
 
     </div>
   </div>

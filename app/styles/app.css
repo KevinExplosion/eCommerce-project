@@ -1,13 +1,14 @@
 body {
   background-color: rgba(0, 0, 0, 0.0);
+    color: #fff;
 }
 
 html {
   background-image: url("cssImages/pageBackground.jpg");
   background-color: #000;
   background-repeat: no-repeat;
-  color: #fff;
   background-size: cover;
+  min-height: 100%;
 }
 
 .navbar {
@@ -41,6 +42,10 @@ img {
   border: 2px solid black;
 }
 
+.storeProduct img{
+  padding-right: 10px;
+}
+
 .panel {
   color: #000;
   background-color: rgba(255, 255, 255, 0.6);
@@ -53,4 +58,8 @@ img {
 
 .signedOut {
   text-align: center;
+}
+
+input {
+  color: #000;
 }
