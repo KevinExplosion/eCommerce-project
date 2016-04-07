@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  isSignInShowing: true,
   actions: {
     signIn(provider) {
+      this.set('isSignInShowing', false);
       let controller = this;
       this.get('session').open('firebase', {
         provider: provider,

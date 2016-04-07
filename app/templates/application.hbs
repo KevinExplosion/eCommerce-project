@@ -5,9 +5,22 @@
       {{#link-to 'shopping-cart'}}<span class="glyphicon glyphicon-shopping-cart"></span>{{/link-to}} |
       {{#link-to 'signin'}}Sign-In{{/link-to}} |
       {{#link-to 'sign-up'}}Sign-Up{{/link-to}} |
-      <!-- {{#link-to 'sign-out'}}Sign-Out{{/link-to}} -->
+      {{#if session.isAuthenticated}}
+        <button class='btn btn-default navbar-btn signOut' {{action 'signOut'}}>    {{fa-icon 'sign-out'}} Sign Out
+        </button>
+      {{/if}}
     </nav>
     <div class="container">
+
+    {{#if session.isAuthenticated}}
+      <h1>Welcome, you are signed in!</h1>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>{{session.currentUser.email}}</div>
+            <div class='panel-body'>
+                <img src='{{session.currentUser.profileImageURL}}' />
+            </div>
+        </div>
+      {{/if}}
 
   {{outlet}}
 

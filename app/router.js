@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('store-item', {path: '/store-item/:store_item_id'});
   this.route('signin');
   this.route('sign-up');
+  this.route('welcome');
 });
 
 export default Router;

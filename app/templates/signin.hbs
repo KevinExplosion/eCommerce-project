@@ -2,6 +2,7 @@
 
 <div class="row">
   <div class="col-xs-4 content">
+    {{#if isSignInShowing}}
     <h2>Welcome!</h2>
     <h3>Please Sign-In</h3>
 
@@ -19,21 +20,26 @@
           placeholder='password'
           required="required"
       }}
-      
+      {{/if}}
+
       {{#if session.isWorking}}
 
-        <button class='btn btn-default' disabled='disabled'>
-            {{fa-icon 'spinner' spin=true}} Signing in...
-        </button>
+      <button class='btn btn-default' disabled='disabled'>
+        {{fa-icon 'spinner' spin=true}} Signing in...
+      </button>
 
       {{else}}
 
+      {{#if isSignInShowing}}
         <button class='btn btn-default' {{action 'signIn' 'password'}}>
-            {{fa-icon 'sign-in'}} Sign In
+          {{fa-icon 'sign-in'}} Sign In
         </button>
+        <h6>Don't have a profile? Click {{#link-to 'sign-up'}}here{{/link-to}} to create a profile!</h6>
+      {{/if}}
+
 
       {{/if}}
 
-      <h6>Don't have a profile? Click {{#link-to 'sign-up'}}here{{/link-to}} to create a profile!</h6>
+
     </div>
   </div>
