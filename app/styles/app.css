@@ -1,3 +1,9 @@
+body {
+  background-image: url("cssImages/pageBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 .navbar {
   background-color: #6c7a89;
   border-radius: 0;

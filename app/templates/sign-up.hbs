@@ -1,0 +1,27 @@
+<!-- // app/templates/sign-up.hbs -->
+
+<div class="row">
+  <div class="col-xs-4">
+    <h2>Sign Up</h2>
+    <hr>
+        {{input
+            type='text'
+            class='form-control'
+            value=email
+            placeholder='email'
+            required='required'
+        }}
+
+        {{input
+            type='password'
+            class='form-control'
+            value=password
+            placeholder='password'
+            required='required'
+        }}
+
+      <button class='btn btn-default' {{action 'signUp'}}>
+        {{fa-icon 'user-plus'}} Sign Up
+      </button>
+    </div>
+  </div>
